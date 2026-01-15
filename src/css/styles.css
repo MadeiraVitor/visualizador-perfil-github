@@ -204,3 +204,84 @@ main {
     font-size: 2rem;
     font-weight: bold;
 }
+
+.repos-section {
+  width: 100%;
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-xl);
+  border-top: 1px solid var(--border);
+}
+
+.repos-section h2 {
+  font-size: var(--font-lg);
+  font-weight: 600;
+  margin-bottom: var(--spacing-xl);
+  letter-spacing: -0.01em;
+}
+
+.repos-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-lg);
+  justify-content: center;
+}
+
+.repo-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: var(--spacing-lg) var(--spacing-xl);
+  min-width: 260px;
+  max-width: 320px;
+  flex: 1 1 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+
+.repo-card:hover {
+  border-color: var(--ring);
+  box-shadow: var(--shadow-md);
+}
+
+.repo-card h3 {
+  font-size: var(--font-md);
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+  color: var(--primary);
+  word-break: break-word;
+}
+
+.repo-stats {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.repo-stats span {
+  display: flex;
+  align-items: center;
+  font-size: var(--font-sm);
+  color: var(--muted-foreground);
+  background: var(--muted);
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 0.25rem;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 1.8rem;
+}
+
+.repo-stats span:last-child {
+  margin-bottom: 0;
+}
+
+.no-repos {
+  color: var(--muted-foreground);
+  font-size: var(--font-md);
+  margin: var(--spacing-lg) 0;
+  text-align: center;
+  width: 100%;
+}
