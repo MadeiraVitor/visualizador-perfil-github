@@ -144,3 +144,45 @@ main {
 .container .profile-results.hide {
   display: none;
 }
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-xl);
+  margin: var(--spacing-xl) auto;
+  max-width: 32rem;
+  width: 100%;
+  gap: var(--spacing-xl);
+}
+
+.profile-avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-name {
+  font-size: var(--font-lg);
+  font-weight: 600;
+  margin-bottom: var(--spacing-xs);
+}
+
+.profile-bio {
+  font-size: var(--font-sm);
+  color: var(--muted-foreground);
+}
+
+.profile-loading {
+  width: 100%;
+  text-align: center;
+  padding: var(--spacing-xl);
+  font-size: var(--font-md);
+  color: var(--muted-foreground);
+}
